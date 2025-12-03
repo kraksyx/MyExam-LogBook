@@ -1,167 +1,157 @@
 const questions = [
   {
-    "question": "1. What is the main purpose of the Technical Log?",
-    "options": ["To schedule pilot training activities", "To record aircraft defects, maintenance, and operating information", "To log fuel prices at different airports"],
-    "correct": 1
-  },
-  {
-    "question": "2. Who is responsible for checking the Technical Log before engine start?",
-    "options": ["Only the instructor", "Ground maintenance crew", "All flight crew members, including students on solo flights"],
-    "correct": 2
-  },
-  {
-    "question": "3. What does the PIC certify when signing the 'Aircraft Technical Log Sector Record'?",
-    "options": ["That the aircraft has been washed and cleaned", "That the crew is well-rested", "Satisfaction with the Pre-Flight Inspection and Fuel/Oil status"],
-    "correct": 2
-  },
-  {
-    "question": "4. Who can certify that a defect has been rectified and release the aircraft back to service?",
-    "options": ["A senior student pilot", "A certified engineer", "The PIC"],
-    "correct": 1
-  },
-  {
-    "question": "5. What happens if a flight crew enters a defect in the log?",
-    "options": ["The log is reviewed after the flight ends", "The aircraft can continue operating without checks", "The Certificate of Airworthiness is invalid until it is cleared or deferred"],
-    "correct": 2
-  },
-  {
-    "question": "6. Why must PICs check the hours remaining before every flight?",
-    "options": ["To check fuel consumption", "To avoid exceeding the hours available before the next inspection", "To schedule rest periods for the crew"],
-    "correct": 1
-  },
-  {
-    "question": "7. What should be done if the total flight time plus current hours are within one hour of a scheduled maintenance?",
-    "options": ["Add a note in the log and proceed", "Complete the flight and report it later", "Contact maintenance and do not accept the airplane"],
-    "correct": 2
-  },
-  {
-    "question": "8. Who is responsible for ensuring previous defects have been cleared or deferred before accepting the aircraft?",
-    "options": ["The engineer", "The PIC", "Air Traffic Control"],
-    "correct": 1
-  },
-  {
-    "question": "9. What should be written in the Tech Log if there are no defects after a flight sector?",
-    "options": ["CLEARED", "NIL DEFECTS", "OK TO FLY"],
-    "correct": 1
-  },
-  {
-    "question": "10. If a defect is found after the acceptance has been signed, where should it be recorded?",
-    "options": ["In the previous Techlog entry", "Only in the pilot's personal logbook", "On a new Techlog page"],
-    "correct": 2
-  },
-  {
-    "question": "11. When is it acceptable for some aircraft equipment to be inoperative?",
-    "options": ["When the crew agrees", "When it's not required for airplane safety and allowed under MEL", "During night flights only"],
-    "correct": 1
-  },
-  {
-    "question": "12. Who makes defect entries in the Tech Log for student pilots?",
-    "options": ["The air traffic controller", "The student in consultation with their FI or DFI", "Only the maintenance staff"],
-    "correct": 1
-  },
-  {
-    "question": "13. What are Deferred Defects?",
-    "options": ["Defects that are ignored until they become serious", "Defects that don’t affect operational capability and can be fixed later", "Temporary notes in the flight plan"],
-    "correct": 1
-  },
-  {
-    "question": "14. Who is responsible for completing post-flight documentation?",
-    "options": ["The co-pilot only", "The ground staff", "The PIC"],
-    "correct": 2
-  },
-  {
-    "question": "15. What times must the PIC record after every flight?",
-    "options": ["Off-Blocks, Takeoff, Landing, and On-Blocks times", "Off-block to on-block only", "Meal breaks and fuel stops"],
+    "question": "1. Who must maintain a personal logbook with details of all flights as an active flight crew member?",
+    "options": ["Pilot", "Cabin Crew", "Flight Instructor"],
     "correct": 0
   },
   {
-    "question": "16. What should be done if defects are recorded post-flight?",
-    "options": ["Enter them in the defect column and remove the Techlog to the stores counter", "Note them verbally to maintenance", "Skip entry if they’re minor issues"],
+    "question": "2. What should logbook entries duplicate?",
+    "options": ["Flight manual entries", "Aircraft maintenance logs", "Tech Log and Exercise Grade Sheet"],
+    "correct": 2
+  },
+  {
+    "question": "3. When should student logbooks be presented to the CFI?",
+    "options": ["Before each Progress Test", "After each exam", "Before each solo flight"],
     "correct": 0
   },
   {
-    "question": "17. How should the Technical Log be filled out?",
-    "options": ["Only in shorthand", "As quickly as possible", "Accurately, legibly, and in full"],
+    "question": "4. When should flight crew logbook entries be made?",
+    "options": ["During pre-flight briefing", "Before boarding the aircraft", "As soon as practicable after the flight"],
     "correct": 2
   },
   {
-    "question": "18. What time format is used for takeoff and landing times?",
-    "options": ["UTC (Coordinated Universal Time)", "Local Time", "Pilot's watch time"],
+    "question": "5. Who supervises student logbook entries during post-flight briefing?",
+    "options": ["Flight Supervisor", "CFI", "Flight Instructor"],
+    "correct": 2
+  },
+  {
+    "question": "6. How many lines are used per flight in the logbook?",
+    "options": ["Two", "One", "Depends on the duration"],
+    "correct": 1
+  },
+  {
+    "question": "7. What is the correct date format for logbook entries?",
+    "options": ["DD/MM/YY", "MM/DD/YYYY", "YYYY-MM-DD"],
     "correct": 0
   },
   {
-    "question": "19. What defines 'Flight Time'?",
-    "options": ["Time from first engine start to shut down", "Time the crew is onboard", "Time from takeoff to landing"],
+    "question": "8. What type of ink must be used for logbook entries?",
+    "options": ["Ballpoint pen", "Pencil", "Indelible ink"],
     "correct": 2
   },
   {
-    "question": "20. What defines 'Block Time'?",
-    "options": ["The time the aircraft is in the hangar", "Time from OFF blocks to ON blocks", "Time from parking brake to engine off"],
-    "correct": 1
+    "question": "9. In what format should flight time be recorded?",
+    "options": ["Only in hours", "Decimal format", "In hours and minutes"],
+    "correct": 2
   },
   {
-    "question": "21. What must all crew check in the Technical Log before each flight?",
-    "options": ["The maintenance statement page for pending tasks", "The destination fuel policy", "The weather radar status"],
+    "question": "10. From when to when should flight times be recorded?",
+    "options": ["From first movement to final stop", "From engine start to engine stop", "From takeoff to landing only"],
     "correct": 0
   },
   {
-    "question": "22. When the PIC enters a defect, what else must be included in the entry?",
-    "options": ["Flight number and airport code", "Initials, full printed name, and staff number in capital letters", "Phone number for contact"],
+    "question": "11. In what time standard must all times be recorded in the logbook?",
+    "options": ["Local time", "UTC", "GMT"],
     "correct": 1
   },
   {
-    "question": "23. How should the times recorded in the logbook, tech log, and flight plan compare?",
-    "options": ["Only the logbook needs accurate times", "They may differ slightly", "They must all match exactly"],
-    "correct": 2
-  },
-  {
-    "question": "24. After recording flight times, where must they also be entered?",
-    "options": ["In the engine log only", "Into TALON ETA system", "In the pilot’s notebook"],
-    "correct": 1
-  },
-  {
-    "question": "25. What must be used for each flight sector?",
-    "options": ["A new aircraft registration", "A pilot report", "At least one sector page"],
-    "correct": 2
-  },
-  {
-    "question": "26. Who is responsible for completing the Data blocks for an inbound flight?",
-    "options": ["Ground engineer", "Captain of the inbound flight", "First Officer"],
-    "correct": 1
-  },
-  {
-    "question": "27. Which information must be completed in the Data blocks?",
-    "options": ["Fuel consumption rate", "Weather details", "Aircraft type, registration, flight number, and IATA station codes"],
-    "correct": 2
-  },
-  {
-    "question": "28. What should be done for Flight type on the log?",
-    "options": ["Write \"Yes\" or \"No\"", "Leave it blank", "Circle Y or N"],
-    "correct": 2
-  },
-  {
-    "question": "29. Which times must be entered in UTC format?",
-    "options": ["Departure date and arrival time", "Cruise speed", "Off blocks, takeoff, land, and on blocks"],
-    "correct": 2
-  },
-  {
-    "question": "30. What are extra landings?",
-    "options": ["Landings more than one in a flight, mainly for training", "Emergency landings", "Landings with passengers only"],
+    "question": "12. How should departure and destination places be entered in the logbook?",
+    "options": ["Using full names or IATA/ICAO codes", "Using nicknames", "Just the city name"],
     "correct": 0
   },
   {
-    "question": "31. How is sector time calculated?",
-    "options": ["Land time minus takeoff time", "Total flying hours minus rest period", "On blocks minus off blocks"],
+    "question": "13. What is recorded in the ‘IF’ column of the logbook?",
+    "options": ["IFR flight time", "Visual flight time", "Instrument time when controlling solely by instruments"],
+    "correct": 2
+  },
+  {
+    "question": "14. What qualifies as Navigation time in a logbook?",
+    "options": ["Flights above 1 hour only", "Flights that follow a pre-planned route", "Any random flight"],
+    "correct": 1
+  },
+  {
+    "question": "15. When can a license holder log all flight time as PIC?",
+    "options": ["During night flights only", "Only when flying solo", "When acting as Pilot in Command"],
+    "correct": 2
+  },
+  {
+    "question": "16. Who is the PIC during instructional flights with students?",
+    "options": ["The flight instructor", "The student", "The flight examiner"],
     "correct": 0
   },
   {
-    "question": "32. What must be transferred from the previous log page?",
-    "options": ["Departure date", "Current total hours", "Weather report"],
+    "question": "17. When can students log flight time as PIC?",
+    "options": ["During every dual flight", "Only during exams", "During solo and SPIC flights"],
+    "correct": 2
+  },
+  {
+    "question": "18. In which column should solo flight time always be recorded?",
+    "options": ["Total", "PIC", "DUAL"],
     "correct": 1
   },
   {
-    "question": "33. How is the current total hours for the flight calculated?",
-    "options": ["Fuel used multiplied by hours flown", "SECTOR TIME + PREVIOUS LOG HOURS BROUGHT FORWARD", "Flight duration minus taxi time"],
+    "question": "19. What should be entered as the PIC name for student solo flights?",
+    "options": ["Instructor’s name", "SELF", "Examiner"],
     "correct": 1
+  },
+  {
+    "question": "20. When do students log dual training time?",
+    "options": ["While flying solo", "During exams", "When receiving training from a flight instructor"],
+    "correct": 2
+  },
+  {
+    "question": "21. When should dual flights be signed in the logbook?",
+    "options": ["At the end of the training program", "After every dual flight", "Weekly"],
+    "correct": 1
+  },
+  {
+    "question": "22. Where should time in simulators or training devices be logged?",
+    "options": ["PIC column", "IF column", "FSTD section"],
+    "correct": 2
+  },
+  {
+    "question": "23. How should 'Type' be recorded in the logbook?",
+    "options": ["Light aircraft", "Single", "SR22"],
+    "correct": 2
+  },
+  {
+    "question": "24. How should 'Registration' be recorded?",
+    "options": ["Full registration", "Airport code", "Partial registration"],
+    "correct": 0
+  },
+  {
+    "question": "25. What should be selected for SE or ME?",
+    "options": ["Write it", "Tick (√)", "Circle"],
+    "correct": 1
+  },
+  {
+    "question": "26. Who should be named as PIC for dual flights?",
+    "options": ["Student", "Flight Instructor", "SELF"],
+    "correct": 1
+  },
+  {
+    "question": "27. How should PIC time be recorded?",
+    "options": ["In HH MM format", "Only in hours", "As decimal"],
+    "correct": 0
+  },
+  {
+    "question": "28. Where should remarks about SPIC be written?",
+    "options": ["PIC column", "Remarks & Endorsements column", "IF column"],
+    "correct": 1
+  },
+  {
+    "question": "29. Can SPIC time be logged if the mission failed?",
+    "options": ["Yes, always", "Only if countersigned", "No, it becomes DUAL"],
+    "correct": 2
+  },
+  {
+    "question": "30. When should a new page be started in the logbook?",
+    "options": ["Every month", "Every 10 flights", "Every week"],
+    "correct": 0
+  },
+  {
+    "question": "31. What is the correct formula for calculating PIC and Total Time?",
+    "options": ["Solo + SPIC = PIC, PIC + DUAL = Total Time", "Solo + DUAL = PIC, PIC + SPIC = Total Time", "SPIC + DUAL = PIC, PIC + Solo = Total Time"],
+    "correct": 0
   }
 ];
